@@ -10,7 +10,7 @@ body {
     width: 100%;
     font-family: "Suisse Int'l", arial;
     font-weight: 300;
-    font-size: 1.5vw;
+    font-size: 1vw;
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-areas:
@@ -80,7 +80,7 @@ section {
     margin-right: 2.5em;
 }
 #social a img{
-    width: 3vw;
+    width: 2vw;
     height: auto;
 }
 footer a{
