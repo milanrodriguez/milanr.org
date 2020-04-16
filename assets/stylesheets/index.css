@@ -10,6 +10,7 @@ body {
     width: 100%;
     font-family: "Suisse Int'l", arial;
     font-weight: 300;
+    font-size: 1.5vw;
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-areas:
@@ -48,9 +49,10 @@ section {
 }
 
 .introduction {
-    font-size: 10em;
+    font-size: 8vw;
     font-weight: 400;
     letter-spacing: normal;
+    white-space: normal ;
 }
 
 #pseudo-social-left-maring {
@@ -78,7 +80,7 @@ section {
     margin-right: 2.5em;
 }
 #social a img{
-    width: 3em;
+    width: 3vw;
     height: auto;
 }
 footer a{
