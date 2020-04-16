@@ -1,47 +1,112 @@
 <!doctype html>
 <html>
-    <head>
-        <title>Milan Rodriguez</title>
-        <style>
-            body {
-                font-family: muli, arial;
-            }
-            .terminal {
-                font-family: Hack, muli, arial;
-            }
-            a {
-                color: black;
-                text-decoration: none;
-            }
-            section{
-                margin-bottom: 1em;
-            }
-        </style>
-    </head>
-    <body>
+
+<head>
+    <title>Milan Rodriguez</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <style>
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+            min-height: 200px;
+        }
+
+        body {
+            height: 100%;
+            width: 100%;
+            font-family: "Suisse Int'l", arial;
+            font-weight: 300;
+            display: grid;
+            grid-template-columns: 60% 40%;
+            grid-template-areas:
+                "main nav";
+            align-items: center;
+            zoom: 1;
+            background-color: white;
+            white-space: nowrap;
+            overflow: hidden;
+            letter-spacing: 1.5px;
+        }
+
+        .terminal {
+            font-family: Hack, muli, arial;
+            text-transform: uppercase;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 3%;
+            margin-left: 3%;
+        }
+
+        h1,
+        section {
+            margin: 0;
+        }
+
+        .introduction {
+            font-size: 10em;
+            font-weight: 400;
+            letter-spacing: normal;
+        }
+
+        #pseudo-social-left-maring {
+            font-family: Hack, muli, arial;
+            color: white;
+        }
+
+        ::selection {
+            background: #4fc3f7;
+            /* WebKit/Blink Browsers */
+        }
+
+        ::-moz-selection {
+            background: #4fc3f7;
+            /* Gecko Browsers */
+        }
+        .main{
+            margin-left: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main" style="grid-area: main">
         <header id="introduction">
-            <h1>
+            <h1 class="introduction">
                 Hey, I'm Milan.
             </h1>
         </header>
         <section id="short-bio" class="terminal">
             <p>
-                > Student at EPFL.<br/>
-                > Co-founder and vice-CEO at Qwanse.<br/>
-                > Co-founder at Castornaute.<br/>
+                > Student at EPFL.<br />
+                > Co-founder and vice-CEO at Qwanse.<br />
+                > Co-founder at Castornaute.<br />
+                > <br />
+                > You can find me here:<br />
             </p>
         </section>
-        <section id="social">
+        <section id="social"><span id="pseudo-social-left-maring">> </span>
             <a href="https://twitter.com/_MilanRodriguez">Twitter</a>
             |
             <a href="https://www.linkedin.com/in/milanrodriguez/Linkedin">Linkedin</a>
             |
             <a href="https://github.com/milanrodriguez">Github</a>
         </section>
-        <footer>
-            <a href="./public-master.gpg">GPG keys</a>
-            |
-            <a href="https://github.com/milanrodriguez/milanrodriguez.org">Source</a>
-        </footer>
-    </body>
+    </div>
+    <nav style="grid-area: nav;">
+    </nav>
+    <footer style="grid-area: footer;">
+        <a href="./public-master.gpg">GPG keys</a>
+        |
+        <a href="https://github.com/milanrodriguez/milanrodriguez.org">Source</a>
+    </footer>
+</body>
+
 </html>
