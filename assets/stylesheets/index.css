@@ -36,6 +36,10 @@ footer {
     position: absolute;
     bottom: 3%;
     margin-left: 3%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    align-items: center;
 }
 
 h1,
@@ -68,4 +72,22 @@ section {
 
 .main {
     margin-left: 5%;
+}
+
+#social a{
+    margin-right: 2.5em;
+}
+#social a img{
+    width: 3em;
+    height: auto;
+}
+footer a{
+    margin-right: 3em;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 100%;
+    align-items: center;
+}
+footer a img{
+    margin-right: 0.5em;
 }
