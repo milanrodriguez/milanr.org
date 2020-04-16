@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "SuisseIntl";
+    src: url("https://milanrodriguez.org/assets/fonts/SuisseIntl-Regular-WebS.eot") format("opentype"),
+        url("https://milanrodriguez.org/assets/fonts/SuisseIntl-Regular-WebS.svg") format("svg"),
+        url("https://milanrodriguez.org/assets/fonts/SuisseIntl-Regular-WebS.ttf") format("truetype"),
+        url("https://milanrodriguez.org/assets/fonts/SuisseIntl-Regular-WebS.woff") format("woff"),
+        url("https://milanrodriguez.org/assets/fonts/SuisseIntl-Regular-WebS.woff2") format("woff2"),
+}
