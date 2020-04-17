@@ -3,6 +3,7 @@ body {
     margin: 0;
     height: 100%;
     min-height: 200px;
+    font-size: 1em;
 }
 
 body {
@@ -10,7 +11,7 @@ body {
     width: 100%;
     font-family: "SuisseIntl", arial;
     font-weight: 300;
-    font-size: 1vw;
+    font-size: 1em;
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-areas:
@@ -32,6 +33,9 @@ a {
     color: black;
     text-decoration: none;
 }
+a:hover {
+    color: #0E51A7;
+}
 
 footer {
     position: absolute;
@@ -49,7 +53,7 @@ section {
 }
 
 .introduction {
-    font-size: 8vw;
+    font-size: 8em;
     font-weight: 400;
     letter-spacing: normal;
     white-space: normal;
@@ -60,24 +64,17 @@ section {
     color: white;
 }
 
-#pseudo-social-left-maring::selection {
-    color: #326896;
-}
-
-#pseudo-social-left-maring::moz-selection {
-    color: #326896;
+.not-selectable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 ::selection {
-    background: #326896;
+    background: #0E51A7;
     color: white;
     /* WebKit/Blink Browsers */
-}
-
-::-moz-selection {
-    background: #326896;
-    color: white;
-    /* Gecko Browsers */
 }
 
 .main {
@@ -89,8 +86,12 @@ section {
 }
 
 #social a img {
-    width: 2vw;
+    width: 2em;
     height: auto;
+}
+
+#social::selection, .icon::selection{
+    background: #5482BE;
 }
 
 footer a {
