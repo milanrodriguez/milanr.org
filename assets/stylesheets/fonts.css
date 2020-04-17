@@ -7,4 +7,5 @@
         url("/assets/fonts/SuisseIntl-Regular-WebS.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
 }
