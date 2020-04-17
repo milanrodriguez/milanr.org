@@ -77,8 +77,8 @@ section {
 
 .introduction {
     font-size: 7em;
-    font-weight: 400;
-    letter-spacing: normal;
+    font-weight: 600;
+    letter-spacing: 0.05em;
     white-space: normal;
 }
 
