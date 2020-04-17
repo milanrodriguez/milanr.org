@@ -52,12 +52,20 @@ section {
     font-size: 8vw;
     font-weight: 400;
     letter-spacing: normal;
-    white-space: normal ;
+    white-space: normal;
 }
 
 #pseudo-social-left-maring {
     font-family: Hack, muli, arial;
     color: white;
+}
+
+#pseudo-social-left-maring::selection {
+    color: #326896;
+}
+
+#pseudo-social-left-maring::moz-selection {
+    color: #326896;
 }
 
 ::selection {
@@ -76,20 +84,23 @@ section {
     margin-left: 5%;
 }
 
-#social a{
+#social a {
     margin-right: 2.5em;
 }
-#social a img{
+
+#social a img {
     width: 2vw;
     height: auto;
 }
-footer a{
+
+footer a {
     margin-right: 3em;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: 100%;
     align-items: center;
 }
-footer a img{
+
+footer a img {
     margin-right: 0.5em;
 }
