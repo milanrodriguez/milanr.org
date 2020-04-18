@@ -1,0 +1,22 @@
+{
+    "short_name": "Milan's website",
+    "name": "Milan's personal website",
+    "description": "Milan Rodriguez's personal website",
+    "icons": [
+      {
+        "src": "/assets/icons/user-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/assets/icons/user-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "#FFF",
+    "display": "minimal-ui",
+    "scope": "/",
+    "theme_color": "#0277bd"
+  }
