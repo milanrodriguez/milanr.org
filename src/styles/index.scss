@@ -1,0 +1,112 @@
+$main-text-color: #111;
+$main-backgroung-color: white;
+$main-selection-backgroung-color: #0277bd;
+$main-selection-text-color: white;
+
+::selection {
+    background: $main-selection-backgroung-color;
+    color: $main-selection-text-color;
+}
+
+html {
+    height: 100%;
+    font-size: 1vw;
+    color: $main-text-color;
+    background-color: $main-backgroung-color;
+}
+
+body {
+    min-height: 100%;
+    width: 100%;
+    font-family: "SuisseIntl", arial;
+    font-weight: 300;
+    font-size: 1em;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas:
+        "main nav";
+    align-items: center;
+    zoom: 1;
+    background-color: $main-backgroung-color;
+    white-space: nowrap;
+    overflow: hidden;
+    letter-spacing: 1.5px;
+    padding-left: 3%;
+    margin: 0;
+}
+
+#introduction h1 {
+    font-size: 7em;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    white-space: normal;
+    margin: 0;
+}
+
+#shortbio {
+    font-family: Hack, muli, arial;
+    text-transform: uppercase;
+    line-height: 1.5em;
+
+    p {
+        margin-top: 0;
+    }
+}
+
+#social {
+    color: white;
+    font-family: Hack, muli, arial;
+
+    a {
+        margin-right: 2.5em;
+
+        img {
+            width: 2em;
+            height: auto;
+        }
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 3%;
+    display: grid;
+    column-gap: 3em;
+    grid-auto-flow: column;
+
+    a {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: auto auto;
+        align-items: center;
+
+        img {
+            margin-right: 0.5em;
+        }
+    }
+
+    .icon {
+        width: 1.5em;
+        height: auto;
+    }
+}
+
+a {
+    color: black;
+    text-decoration: none;
+
+    :hover {
+        color: #0E51A7;
+
+        img {
+            filter: invert(17%) sepia(30%) saturate(7112%) hue-rotate(206deg) brightness(104%) contrast(89%);
+        }
+    }
+}
+
+.not-selectable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
