@@ -7,7 +7,7 @@ Currently hosted on Netlify.
 
 ## Contributing
 
-Your contribution is very welcomed.  
+Your contribution is welcomed.  
 Feel free to post an issue or to contact me.  
 
 ## License
