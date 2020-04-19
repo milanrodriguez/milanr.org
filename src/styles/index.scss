@@ -10,7 +10,7 @@ $main-selection-text-color: white;
 
 html {
     height: 100%;
-    font-size: 1vw;
+    font-size: 1em;
     color: $main-text-color;
     background-color: $main-backgroung-color;
 }
@@ -26,7 +26,6 @@ body {
     grid-template-areas:
         "main nav";
     align-items: center;
-    zoom: 1;
     background-color: $main-backgroung-color;
     white-space: nowrap;
     overflow: hidden;
