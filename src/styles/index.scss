@@ -18,8 +18,8 @@ html {
 body {
     min-height: 100%;
     width: 100%;
-    font-family: "SuisseIntl", arial;
-    font-weight: 300;
+    font-family: "SuisseIntl", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: normal;
     font-size: 1em;
     display: grid;
     grid-template-columns: 60% 40%;
@@ -36,32 +36,46 @@ body {
 
 #introduction h1 {
     font-size: 7em;
-    font-weight: 600;
     letter-spacing: 0.05em;
     white-space: normal;
     margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
-#shortbio {
-    font-family: Hack, muli, arial;
-    text-transform: uppercase;
-    line-height: 1.5em;
+#description {
 
-    p {
-        margin-top: 0;
+    #shortbio {
+        font-family: Hack, "SuisseIntl", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        text-transform: uppercase;
+        line-height: 1.5em;
+        margin-bottom: 1em;
+
+        ul {
+            margin-top: 0;
+            list-style-type: "> ";
+            list-style-position: inside;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            padding-inline-start: 0;
+        }
     }
-}
 
-#social {
-    color: white;
-    font-family: Hack, muli, arial;
+    #social {
+        color: white;
+        font-family: Hack, muli, arial;
+        margin-left: 2.5ch;
 
-    a {
-        margin-right: 2.5em;
+        a {
+            margin-right: 2.5em;
 
-        img {
-            width: 2em;
-            height: auto;
+            img {
+                width: 2em;
+                height: auto;
+            }
         }
     }
 }
@@ -72,6 +86,7 @@ footer {
     display: grid;
     column-gap: 3em;
     grid-auto-flow: column;
+    font-weight: 200;
 
     a {
         display: grid;
@@ -108,4 +123,10 @@ a {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+@counter-style terminal {
+    system: fixed;
+    symbols: ">";
+    suffix: " ";
 }
