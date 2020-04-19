@@ -5,15 +5,14 @@
 
 html {
   height: 100%;
-  font-size: 1em;
   color: #111;
   background-color: white;
 }
 
 body {
-  min-height: 100%;
+  height: 100%;
   width: 100%;
-  font-family: "SuisseIntl", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "SuisseIntl", Muli, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: normal;
   font-size: 1em;
   display: grid;
@@ -30,18 +29,21 @@ body {
 
 #introduction h1 {
   font-size: 7em;
-  letter-spacing: 0.05em;
-  white-space: normal;
+  white-space: nowrap;
   margin: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
+  overflow: hidden;
+}
+#introduction h1 br {
+  display: none;
+}
+@media (max-width: 1400px) {
+  #introduction h1 br {
+    display: initial;
+  }
 }
 
 #description #shortbio {
-  font-family: Hack, "SuisseIntl", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: Hack, "SuisseIntl", Muli, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   text-transform: uppercase;
   line-height: 1.5em;
   margin-bottom: 1em;
@@ -74,6 +76,7 @@ footer {
   column-gap: 3em;
   grid-auto-flow: column;
   font-weight: 200;
+  margin-top: 5%;
 }
 footer a {
   display: grid;
@@ -94,7 +97,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #0E51A7;
+  color: #0e51a7;
 }
 a:hover img {
   filter: invert(17%) sepia(30%) saturate(7112%) hue-rotate(206deg) brightness(104%) contrast(89%);
@@ -107,10 +110,38 @@ a:hover img {
   user-select: none;
 }
 
-@counter-style terminal {
-  system: fixed;
-  symbols: ">";
-  suffix: " ";
+@media (max-width: 1200px) {
+  body {
+    grid-template: none;
+  }
+
+  #main {
+    width: 100%;
+  }
+
+  #introduction h1 br {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  body {
+    font-size: 3vw;
+  }
+
+  #introduction h1 {
+    font-size: 4em;
+  }
+  #introduction h1 br {
+    display: none;
+  }
+}
+@media (max-height: 550px) {
+  footer {
+    position: initial;
+    bottom: initial;
+    column-gap: 1em;
+    width: min-content;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

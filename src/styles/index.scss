@@ -2,131 +2,162 @@ $main-text-color: #111;
 $main-backgroung-color: white;
 $main-selection-backgroung-color: #0277bd;
 $main-selection-text-color: white;
+$font-family: "SuisseIntl", Muli, -apple-system, BlinkMacSystemFont, "Segoe UI",
+	Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+	"Segoe UI Symbol";
 
 ::selection {
-    background: $main-selection-backgroung-color;
-    color: $main-selection-text-color;
+	background: $main-selection-backgroung-color;
+	color: $main-selection-text-color;
 }
 
 html {
-    height: 100%;
-    font-size: 1em;
-    color: $main-text-color;
-    background-color: $main-backgroung-color;
+	height: 100%;
+	color: $main-text-color;
+	background-color: $main-backgroung-color;
 }
 
 body {
-    min-height: 100%;
-    width: 100%;
-    font-family: "SuisseIntl", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-weight: normal;
-    font-size: 1em;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-areas:
-        "main nav";
-    align-items: center;
-    background-color: $main-backgroung-color;
-    white-space: nowrap;
-    overflow: hidden;
-    letter-spacing: 1.5px;
-    padding-left: 3%;
-    margin: 0;
+	height: 100%;
+	width: 100%;
+	font-family: $font-family;
+	font-weight: normal;
+	font-size: 1em;
+	display: grid;
+	grid-template-columns: 60% 40%;
+	grid-template-areas: "main nav";
+	align-items: center;
+	background-color: $main-backgroung-color;
+	white-space: nowrap;
+	overflow: hidden;
+	letter-spacing: 1.5px;
+	padding-left: 3%;
+	margin: 0;
 }
 
 #introduction h1 {
-    font-size: 7em;
-    letter-spacing: 0.05em;
-    white-space: normal;
-    margin: 0;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+	font-size: 7em;
+	white-space: nowrap;
+	margin: 0;
+	overflow: hidden;
+	br {
+		display: none;
+		@media (max-width: 1400px) {
+			display: initial;
+		}
+	}
 }
 
 #description {
+	#shortbio {
+		font-family: Hack, $font-family;
+		text-transform: uppercase;
+		line-height: 1.5em;
+		margin-bottom: 1em;
 
-    #shortbio {
-        font-family: Hack, "SuisseIntl", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-        text-transform: uppercase;
-        line-height: 1.5em;
-        margin-bottom: 1em;
+		ul {
+			margin-top: 0;
+			list-style-type: "> ";
+			list-style-position: inside;
+			margin-block-start: 0;
+			margin-block-end: 0;
+			padding-inline-start: 0;
+		}
+	}
 
-        ul {
-            margin-top: 0;
-            list-style-type: "> ";
-            list-style-position: inside;
-            margin-block-start: 0;
-            margin-block-end: 0;
-            padding-inline-start: 0;
-        }
-    }
+	#social {
+		color: white;
+		font-family: Hack, muli, arial;
+		margin-left: 2.5ch;
 
-    #social {
-        color: white;
-        font-family: Hack, muli, arial;
-        margin-left: 2.5ch;
+		a {
+			margin-right: 2.5em;
 
-        a {
-            margin-right: 2.5em;
-
-            img {
-                width: 2em;
-                height: auto;
-            }
-        }
-    }
+			img {
+				width: 2em;
+				height: auto;
+			}
+		}
+	}
 }
 
 footer {
-    position: absolute;
-    bottom: 3%;
-    display: grid;
-    column-gap: 3em;
-    grid-auto-flow: column;
-    font-weight: 200;
+	position: absolute;
+	bottom: 3%;
+	display: grid;
+	column-gap: 3em;
+	grid-auto-flow: column;
+	font-weight: 200;
+	margin-top: 5%;
+	a {
+		display: grid;
+		grid-template-rows: 1fr;
+		grid-template-columns: auto auto;
+		align-items: center;
 
-    a {
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: auto auto;
-        align-items: center;
+		img {
+			margin-right: 0.5em;
+		}
+	}
 
-        img {
-            margin-right: 0.5em;
-        }
-    }
-
-    .icon {
-        width: 1.5em;
-        height: auto;
-    }
+	.icon {
+		width: 1.5em;
+		height: auto;
+	}
 }
 
 a {
-    color: black;
-    text-decoration: none;
+	color: black;
+	text-decoration: none;
 
-    &:hover {
-        color: #0E51A7;
+	&:hover {
+		color: #0e51a7;
 
-        img {
-            filter: invert(17%) sepia(30%) saturate(7112%) hue-rotate(206deg) brightness(104%) contrast(89%);
-        }
-    }
+		img {
+			filter: invert(17%) sepia(30%) saturate(7112%) hue-rotate(206deg)
+				brightness(104%) contrast(89%);
+		}
+	}
 }
 
 .not-selectable {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
-@counter-style terminal {
-    system: fixed;
-    symbols: ">";
-    suffix: " ";
+@media /*(min-width: 650px) and */(max-width: 1200px) {
+	body {
+		grid-template: none;
+	}
+	#main {
+		width: 100%;
+	}
+	#introduction h1 {
+		br {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	body {
+		font-size: 3vw;
+	}
+	#introduction h1 {
+		font-size: 4em;
+		br {
+			display: none;
+		}
+	}
+}
+
+@media (max-height: 550px) {
+	footer {
+		position: initial;
+		bottom: initial;
+		column-gap: 1em;
+		width: min-content;
+	}
 }
