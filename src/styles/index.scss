@@ -33,6 +33,7 @@ body {
 	letter-spacing: 1.5px;
 	padding-left: 3%;
 	margin: 0;
+	animation: fadein 1s ease-in 200ms 1 normal both;
 }
 
 #introduction h1 {
@@ -159,5 +160,14 @@ a {
 		bottom: initial;
 		column-gap: 1em;
 		width: min-content;
+	}
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
 	}
 }
