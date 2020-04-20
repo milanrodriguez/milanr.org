@@ -28,7 +28,7 @@ body {
 }
 @media not all and (prefers-reduced-motion: reduce) {
   body {
-    animation: fadein 1s ease-in 200ms 1 normal both;
+    animation: fadein 2s ease 200ms 1 normal both;
   }
 }
 
