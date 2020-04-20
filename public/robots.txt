@@ -1,4 +1,4 @@
-Sitemap: https://milanrodriguez.org/sitemap.xml
+Sitemap: https://milanr.org/sitemap.xml
 
 User-agent: *
 Disallow: /assets/*
