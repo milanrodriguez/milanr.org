@@ -1,6 +1,6 @@
 # Changelog
 
-## v0.1.0 - Initial update
+## v0.1.0 - Initial update | 2020-04-21
 
 ### General
 
