@@ -74,11 +74,6 @@ body {
   height: auto;
   vertical-align: top;
 }
-@media not all and (prefers-reduced-motion: reduce) {
-  #description #social a img:hover {
-    transform: scale(1.5) perspective(1px);
-  }
-}
 
 footer {
   position: absolute;

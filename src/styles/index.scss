@@ -80,11 +80,6 @@ body {
 				width: 2em;
 				height: auto;
 				vertical-align: top;
-				&:hover {
-					@media not all and (prefers-reduced-motion: reduce) {
-						transform: scale(1.5) perspective(1px);
-					}
-				}
 			}
 		}
 	}
