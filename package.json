@@ -1,0 +1,41 @@
+{
+  "name": "milan-org",
+  "private": true,
+  "description": "Milan's personal website",
+  "version": "0.1.0",
+  "author": "Milan Rodriguez <me@milanr.org>",
+  "dependencies": {
+    "gatsby": "^2.20.25",
+    "gatsby-plugin-react-helmet": "^3.2.4",
+    "gatsby-plugin-sass": "^2.2.3",
+    "node-sass": "^4.13.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.0.0"
+  },
+  "devDependencies": {
+    "@hot-loader/react-dom": "^16.8.6",
+    "prettier": "2.0.4"
+  },
+  "keywords": [
+    "Milan Rodriguez"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/milanrodriguez/milanr.org"
+  },
+  "bugs": {
+    "url": "https://github.com/milanrodriguez/milanr.org/issues"
+  }
+}

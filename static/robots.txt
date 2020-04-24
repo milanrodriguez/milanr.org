@@ -1,0 +1,5 @@
+Sitemap: https://milanr.org/sitemap.xml
+
+User-agent: *
+Disallow: /assets/*
+Disallow: /README.md
