@@ -25,6 +25,13 @@ import sourceIcon from "../icons/code.svg"
 const IndexPage = () => (
 	<>
 		<Helmet>
+			<title>Milan Rodriguez</title>
+			<meta name="Description" content="Milan Rodriguez's website" />
+			<meta name="color-scheme" content="only-light" />
+			<link rel="canonical" href="https://milanr.org" />
+			<link rel="icon" href="/icons/meta/user-64.png" />
+			<link rel="manifest" href="manifest.webmanifest" />
+			<meta name="theme-color" content="#000" />
 			<link
 				rel="stylesheet"
 				href="https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css"
