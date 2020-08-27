@@ -1,6 +1,7 @@
 @font-face {
 	font-family: "SuisseIntl";
-	src: url("/assets/fonts/SuisseIntl-Regular-WebS.woff2") format("woff2"),
+	src: local("Suisse Int'l"),
+		url("/assets/fonts/SuisseIntl-Regular-WebS.woff2") format("woff2"),
 		url("/assets/fonts/SuisseIntl-Regular-WebS.woff") format("woff"),
 		url("/assets/fonts/SuisseIntl-Regular-WebS.eot") format("opentype"),
 		url("/assets/fonts/SuisseIntl-Regular-WebS.svg") format("svg"),
@@ -12,7 +13,8 @@
 
 @font-face {
 	font-family: "SuisseIntl";
-	src: url("/assets/fonts/SuisseIntl-Light-WebS.woff2") format("woff2"),
+	src: local("Suisse Int'l Light"),
+		url("/assets/fonts/SuisseIntl-Light-WebS.woff2") format("woff2"),
 		url("/assets/fonts/SuisseIntl-Light-WebS.woff") format("woff"),
 		url("/assets/fonts/SuisseIntl-Light-WebS.eot") format("opentype"),
 		url("/assets/fonts/SuisseIntl-Light-WebS.svg") format("svg"),
