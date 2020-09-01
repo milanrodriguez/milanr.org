@@ -39,37 +39,39 @@
     <link rel="icon" href="assets/icons/user-64.png" />
     <meta name="referrer" content="strict-origin">
     <link rel="manifest" href="manifest.webmanifest">
-    <meta name="theme-color" content="#000">
+    <meta name="theme-color" content="#333">
 </head>
-
 <body>
-    <section id="main">
-        <header id="introduction">
-            <h1>Hey, <br>I'm Milan.</h1>
-        </header>
-        <section id="description">
-            <section id="shortbio">
-                <ul>
-                    <li>Student at <a rel="external" href="https://epfl.ch/" aria-label="EPFL">EPFL</a>.</li>
-                    <li>Co-founder and vice-CEO at <a rel="external" href="https://qwanse.com/" aria-label="Qwanse">Qwanse</a>.</li>
-                    <li>Co-founder at <a rel="external" href="https://castornaute.com/" aria-label="Castornaute">Castornaute</a>.</li>
-                    <li></li>
-                    <li>You can find me here:</li>
-            </section>
-            <section id="social" data-nosnippet>
-                <a rel="external" href="https://twitter.com/_MilanRodriguez" aria-label="Twitter account"><img src="assets/icons/twitter.svg" alt="Twitter logo" class="icon"></a>
-                <a rel="external" href="https://www.linkedin.com/in/milanrodriguez/Linkedin" aria-label="Linkedin account"><img src="assets/icons/linkedin.svg" alt="Linkedin logo" class="icon"></a>
-                <a rel="external" href="https://github.com/milanrodriguez" aria-label="Github account"><img src="assets/icons/github.svg" alt="Github logo" class="icon"></a>
-            </section>
-        </section>
+    <div id="main">
+        <h1>Hey<span class="blue-text">,</span> <span style="white-space: nowrap;">I'm Milan</span><span class="blue-text">.</span></h1>
+        <p>
+            Student @ <a href="https://epfl.ch" class="tag-background"><span>EPFL</span></a>
+            <br />
+            Co-founder @ <a href="https://castornaute.com" class="tag-background"><span>Castornaute</span></a>
+            <br />
+            Co-founder @ <a href="https://qwanse.com" class="tag-background"><span>Qwanse</span></a>
+        </p>
+        <div id="social">
+            <a rel="external" href="https://twitter.com/_MilanRodriguez" aria-label="Twitter account" class="hoverlink"><img
+                    src="assets/icons/twitter.svg" alt="Twitter logo" class="icon"></a>
+            <a rel="external" href="https://www.linkedin.com/in/milanrodriguez/Linkedin" aria-label="Linkedin account" class="hoverlink"><img
+                    src="assets/icons/linkedin.svg" alt="Linkedin logo" class="icon"></a>
+            <a rel="external" href="https://github.com/milanrodriguez" aria-label="Github account" class="hoverlink"><img
+                    src="assets/icons/github.svg" alt="Github logo" class="icon"></a>
         </div>
-        <nav style="grid-area: nav;">
-        </nav>
-        <footer data-nosnippet>
-            <a href="mailto:me@milanr.org"><img src="assets/icons/mail.svg" alt="" class="icon not-selectable">Mail</a>
-            <a rel="nofollow"href="https://gpg.milanr.org/" type="pgp-keys"><img src="assets/icons/key.svg" alt="" class="icon not-selectable">PGP keys</a>
-            <a rel="nofollow external" href="https://github.com/milanrodriguez/milanr.org"><img src="assets/icons/code.svg" alt="" class="icon not-selectable">Source</a>
-        </footer>
+    </div>
+    <div id="emailandkey">
+        <a href="mailto:me@milanr.org" class="hoverlink">
+            <img src="assets/icons/mail.svg" alt="" class="icon not-selectable">
+            Email
+        </a>
+        <a href="" class="hoverlink">
+            <img src="assets/icons/key.svg" alt="" class="icon not-selectable">
+            PGP
+        </a>
+    </div>
+
+
 </body>
 
 </html>

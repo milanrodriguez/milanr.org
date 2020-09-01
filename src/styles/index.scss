@@ -1,176 +1,181 @@
-$main-text-color: #111;
+$main-text-color: #333;
 $main-backgroung-color: white;
-$main-selection-backgroung-color: #0277bd;
+$main-highlight-color: #777;
 $main-selection-text-color: white;
-$font-family: "SuisseIntl", Muli, -apple-system, BlinkMacSystemFont, "Segoe UI",
-	Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-	"Segoe UI Symbol";
+$main-accent-color:#b2dfdb;
+$font-family: "SuisseIntl",
+Muli,
+-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+Helvetica,
+Arial,
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol";
+$global-left-margin: 3rem;
 
 ::selection {
-	background: $main-selection-backgroung-color;
+	background: $main-highlight-color;
 	color: $main-selection-text-color;
 }
 
-html {
-	height: 100%;
+html, body {
+	height: 100vh;
+	width: 100vw;
 	color: $main-text-color;
 	background-color: $main-backgroung-color;
-}
-
-body {
-	height: 100%;
-	width: 100%;
-	font-family: $font-family;
-	font-weight: normal;
-	font-size: 1em;
-	display: grid;
-	grid-template-columns: 60% 40%;
-	grid-template-areas: "main nav";
-	align-items: center;
-	background-color: $main-backgroung-color;
-	white-space: nowrap;
-	overflow: hidden;
-	letter-spacing: 1.5px;
-	padding-left: 3%;
 	margin: 0;
+	font-family: $font-family;
+	background-color: $main-backgroung-color;
+
 	@media not all and (prefers-reduced-motion: reduce) {
 		animation: fadein 2s ease 200ms 1 normal both;
 	}
+
+	min-width: 300px;
+
 }
 
-#introduction h1 {
-	font-size: 7em;
-	white-space: nowrap;
-	margin: 0;
-	overflow: hidden;
-	br {
-		display: none;
-		@media (max-width: 1400px) {
-			display: initial;
-		}
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+div#main {
+	font-size: 1em;
+
+	padding-left: $global-left-margin;
+	padding-right: $global-left-margin;
+
+	> *:not(:last-child) {
+		margin-bottom: 2rem;
 	}
-}
 
-#description {
-	#shortbio {
-		font-family: Hack, $font-family;
-		text-transform: uppercase;
-		line-height: 1.5em;
-		margin-bottom: 1em;
+	h1 {
+		margin: 0;
+		font-size: 5.5em;
+		font-weight: 350;
+		line-height: 100%;
 
-		ul {
-			margin-top: 0;
-			list-style-type: "> ";
-			list-style-position: inside;
-			margin-block-start: 0;
-			margin-block-end: 0;
-			padding-inline-start: 0;
-		}
+		margin-left: -6px; /* FIX for the "Suisse Int'l" font used */
+	}
+
+	p {
+		margin: 0;
+		line-height: 1.5;
 	}
 
 	#social {
-		color: white;
-		font-family: Hack, muli, arial;
-		margin-left: 2.5ch;
-
-		a {
-			margin-right: 2.5em;
-
-			img {
-				width: 2em;
-				height: auto;
-				vertical-align: top;
-			}
+		font-weight: 300;
+	
+		> *:not(:last-child) {
+			margin-right: 1.5rem;
 		}
-	}
+	
+		.icon {
+			width: 2rem;
+		}
+	
+	}	
+
 }
 
-footer {
-	position: absolute;
-	bottom: 3%;
-	display: grid;
-	column-gap: 3em;
-	grid-auto-flow: column;
-	font-weight: 200;
-	margin-top: 5%;
+div#emailandkey {
+	font-weight: 400;
+	position: fixed;
+	left: 0;
+	margin-left: $global-left-margin;
+	bottom: 0;
+	margin-bottom: 2rem;
+	
+	> *:not(:last-child) {
+		margin-right: 1.5rem;
+	}
+
 	a {
-		display: grid;
-		grid-template-rows: 1fr;
-		grid-template-columns: auto auto;
+		display: inline-grid;
+		grid-auto-flow: column;
+		column-gap: 0.5rem;
 		align-items: center;
-
-		img {
-			margin-right: 0.5em;
-		}
 	}
 
-	.icon {
-		width: 1.5em;
-		height: auto;
+	@media (max-height: 500px) {
+		left: auto;
+		right: 0;
+
+		margin-right: $global-left-margin;
+
+		> *:not(:last-child) {
+			margin-right: 1.5rem;
+		}
+
+	}
+
+}
+
+.tag-background > span {
+	background-color: $main-accent-color;
+	border-radius: 0.5em;
+	padding-left: 0.3em;
+	padding-right: 0.3em;
+
+	font-weight: 300;
+
+	&::selection {
+		background: $main-accent-color;
+		color: $main-selection-text-color;
+	}
+
+	&:hover {
+		background-color: $main-highlight-color;
+		color: $main-selection-text-color;
 	}
 }
 
-a {
-	color: black;
+.blue-text {
+	color:#b2dfdb;
+	&:hover {
+		color: $main-highlight-color;
+	}
+}
+
+.icon {
+	width: 1.75rem;
+	vertical-align: middle;
+}
+
+a{
+	color: $main-text-color;
+	text-decoration: none;
+}
+
+a.hoverlink {
+	color: $main-text-color;
 	text-decoration: none;
 
 	&:hover {
-		color: #0e51a7;
+		color: $main-highlight-color;
+
 		@media not all and (prefers-reduced-motion: reduce) {
 			img {
-				filter: invert(17%) sepia(30%) saturate(7112%)
-					hue-rotate(206deg) brightness(104%) contrast(89%);
+				filter: invert(51%) sepia(0%) saturate(1%) hue-rotate(2deg) brightness(90%) contrast(84%);
+				/* Made to convert black to #777, using https://codepen.io/sosuke/pen/Pjoqqp */
 			}
 		}
 	}
 }
 
-.not-selectable {
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-
-@media /*(min-width: 650px) and */(max-width: 1200px) {
-	body {
-		grid-template: none;
-	}
-	#main {
-		width: 100%;
-	}
-	#introduction h1 {
-		br {
-			display: none;
-		}
-	}
-}
-
-@media (max-width: 800px) {
-	body {
-		font-size: 3vw;
-	}
-	#introduction h1 {
-		font-size: 4em;
-		br {
-			display: none;
-		}
-	}
-}
-
-@media (max-height: 550px) {
-	footer {
-		position: initial;
-		bottom: initial;
-		column-gap: 1em;
-		width: min-content;
-	}
-}
 
 @keyframes fadein {
 	0% {
 		opacity: 0;
 	}
+
 	100% {
 		opacity: 1;
 	}
