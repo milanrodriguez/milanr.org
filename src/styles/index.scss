@@ -30,6 +30,7 @@ html, body {
 	background-color: $main-backgroung-color;
 	margin: 0;
 	font-family: $font-family;
+	font-size: 16px;
 	background-color: $main-backgroung-color;
 
 	@media not all and (prefers-reduced-motion: reduce) {
@@ -79,6 +80,14 @@ div#main {
 	p {
 		margin: 0;
 		line-height: 1.5;
+
+		.tag > ion-icon {
+			display: none;
+		}
+		
+		.tag:hover > ion-icon {
+			display: inline-block;
+		}
 	}
 
 	#social {
@@ -89,10 +98,10 @@ div#main {
 		}
 	
 		.icon {
-			width: 2rem;
+			width: 1.75rem;
 		}
 	
-	}	
+	}
 
 	@media (max-width: 520px) {
 		padding-left: 5vw;
@@ -147,7 +156,7 @@ div#emailandkey {
 }
 
 .tag {
-	background-color: $main-accent-color;
+	background-color: #333;
 	padding-left: 0.3em;
 	padding-right: 0.3em;
 	color: white;
@@ -158,14 +167,11 @@ div#emailandkey {
 	}
 
 	&:hover {
-		background-color: #333;
+		background-color: $main-accent-color;
 		color: $main-selection-text-color;
 	}
 
-	transition: all $transition-time;
-	transition: color 0.2s;
-	
-	background-color: $main-accent-color;
+	transition: background-color 0.5s;
 
 }
 
@@ -185,7 +191,7 @@ div#emailandkey {
 }
 
 .icon {
-	width: 1.75rem;
+	width: 1.5rem;
 	vertical-align: middle;
 }
 
