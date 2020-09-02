@@ -2,7 +2,7 @@ $main-text-color: #333;
 $main-backgroung-color: white;
 $main-highlight-color: #777;
 $main-selection-text-color: white;
-$main-accent-color:#b2dfdb;
+$main-accent-color:#89b0ae;
 $font-family: "SuisseIntl",
 Muli,
 -apple-system,
@@ -16,6 +16,7 @@ sans-serif,
 "Segoe UI Emoji",
 "Segoe UI Symbol";
 $global-left-margin: 3rem;
+$transition-time: 0.3s;
 
 ::selection {
 	background: $main-highlight-color;
@@ -37,12 +38,22 @@ html, body {
 
 	min-width: 300px;
 
+	@media (max-height: 440px), (max-width: 440px) {
+		font-size: 10pt;
+	}
+
+
+
 }
 
 body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+
+	@media (max-height: 250px), (max-width: 440px) and (max-height: 380px) {
+		display: unset;
+	}
 }
 
 
@@ -83,6 +94,11 @@ div#main {
 	
 	}	
 
+	@media (max-width: 520px) {
+		padding-left: 5vw;
+		padding-right: 0em;
+	}
+
 }
 
 div#emailandkey {
@@ -116,15 +132,25 @@ div#emailandkey {
 
 	}
 
+	@media (max-width: 440px) {
+		position: static;
+		margin: 0;
+
+		margin-top: 2em;
+	}
+
+	@media (max-width: 520px) {
+		padding-left: 5vw;
+	}
+
+
 }
 
-.tag-background > span {
+.tag {
 	background-color: $main-accent-color;
-	border-radius: 0.5em;
 	padding-left: 0.3em;
 	padding-right: 0.3em;
-
-	font-weight: 300;
+	color: white;
 
 	&::selection {
 		background: $main-accent-color;
@@ -132,20 +158,54 @@ div#emailandkey {
 	}
 
 	&:hover {
-		background-color: $main-highlight-color;
+		background-color: #333;
 		color: $main-selection-text-color;
 	}
+
+	transition: all $transition-time;
+	transition: color 0.2s;
+	
+	background-color: $main-accent-color;
+
 }
 
-.blue-text {
-	color:#b2dfdb;
+.mono-text {
+	font-family: "SuisseIntl mono",$font-family;
+	font-weight: 400;
+	white-space: nowrap;
+}
+
+.accent-text {
+	color:$main-accent-color;
 	&:hover {
-		color: $main-highlight-color;
+		color: #333;
+		transition: color $transition-time;
 	}
+	transition: color $transition-time;
 }
 
 .icon {
 	width: 1.75rem;
+	vertical-align: middle;
+}
+
+.twemoji {
+	height: 1em;
+	width: 1em;
+	margin: 0 .2em 0 .2em;
+	vertical-align: -0.15em;
+
+
+	&[alt="🇨🇭"] {
+		height: 1.1em;
+		width: 1.1em;
+		vertical-align: -0.2em;
+		margin-right: .1em;
+		margin-left: -0.1em;
+	}
+}
+
+ion-icon {
 	vertical-align: middle;
 }
 
@@ -165,7 +225,9 @@ a.hoverlink {
 			img {
 				filter: invert(51%) sepia(0%) saturate(1%) hue-rotate(2deg) brightness(90%) contrast(84%);
 				/* Made to convert black to #777, using https://codepen.io/sosuke/pen/Pjoqqp */
+				transition: all $transition-time;
 			}
+			transition: all $transition-time;
 		}
 	}
 }

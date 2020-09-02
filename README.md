@@ -18,4 +18,4 @@ Feel free to post an issue or to contact me if you have an improvement idea.
 ## 📘 License
 
 My work here is licensed under the [MIT license](https://github.com/milanrodriguez/milanr.org/blob/master/LICENSE).  
-I use [Feather icons](https://feathericons.com/) ([MIT license](https://github.com/feathericons/feather/blob/master/LICENSE)).
+I use [Feather icons](https://feathericons.com/) ([MIT license](https://github.com/feathericons/feather/blob/master/LICENSE)), [Ionicons](https://ionicons.com/) ([MIT license](https://github.com/ionic-team/ionicons/blob/master/LICENSE)), and [Twemoji](https://twemoji.twitter.com/) ([MIT License](http://opensource.org/licenses/MIT) and [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)).
