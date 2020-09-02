@@ -160,6 +160,7 @@ div#emailandkey {
 	padding-left: 0.3em;
 	padding-right: 0.3em;
 	color: white;
+	cursor: default;
 
 	&::selection {
 		background: $main-accent-color;
@@ -173,6 +174,10 @@ div#emailandkey {
 
 	transition: background-color 0.5s;
 
+}
+
+a > .tag {
+	cursor: unset;
 }
 
 .mono-text {
