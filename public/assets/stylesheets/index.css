@@ -132,11 +132,11 @@ div#emailandkey ion-icon {
   transition: background-color 0.5s;
 }
 .tag::selection {
-  background: #89b0ae;
+  background: #e63946;
   color: white;
 }
 .tag:hover {
-  background-color: #89b0ae;
+  background-color: #e63946;
   color: white;
 }
 
@@ -151,7 +151,7 @@ a > .tag {
 }
 
 .accent-text {
-  color: #89b0ae;
+  color: #e63946;
   transition: color 0.3s;
 }
 .accent-text:hover {
