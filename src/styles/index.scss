@@ -152,7 +152,10 @@ div#emailandkey {
 		padding-left: 5vw;
 	}
 
-
+	ion-icon {
+		width: 1.5em;
+		height: 1.5em;
+	}
 }
 
 .tag {
@@ -195,12 +198,12 @@ a > .tag {
 	transition: color $transition-time;
 }
 
-.icon {
+.icon { 
 	width: 1.5rem;
 	vertical-align: middle;
 }
 
-.twemoji {
+.twemoji { /* Flags */
 	height: 1em;
 	width: 1em;
 	margin: 0 .2em 0 .2em;
@@ -218,6 +221,8 @@ a > .tag {
 
 ion-icon {
 	vertical-align: middle;
+	width: 1.1em;
+	height: 1.1em;
 }
 
 a{
