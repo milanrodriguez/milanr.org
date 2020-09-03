@@ -50,7 +50,7 @@ div#main h1 {
   font-size: 5.5em;
   font-weight: 350;
   line-height: 100%;
-  margin-left: -6px;
+  margin-left: -4px;
   /* FIX for the "Suisse Int'l" font used */
 }
 div#main p {
