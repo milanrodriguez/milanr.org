@@ -1,27 +1,27 @@
 @font-face {
   font-family: "SuisseIntl";
-  src: url("https://storage.googleapis.com/assets.milanr.org/fonts/suisse/SuisseIntl-Regular-WebS.woff2") format("woff2"), url("https://storage.googleapis.com/assets.milanr.org/fonts/suisse/SuisseIntl-Regular-WebS.woff") format("woff"), url("https://storage.googleapis.com/assets.milanr.org/fonts/suisse/SuisseIntl-Regular-WebS.eot") format("opentype"), url("https://storage.googleapis.com/assets.milanr.org/fonts/suisse/SuisseIntl-Regular-WebS.ttf") format("truetype");
+  src: url("https://static.milanr.io/fonts/suisse/SuisseIntl-Regular-WebS.woff2") format("woff2"), url("https://static.milanr.io/fonts/suisse/SuisseIntl-Regular-WebS.woff") format("woff"), url("https://static.milanr.io/fonts/suisse/SuisseIntl-Regular-WebS.eot") format("opentype"), url("https://static.milanr.io/fonts/suisse/SuisseIntl-Regular-WebS.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: block;
 }
 @font-face {
   font-family: "SuisseIntl";
-  src: url("https://storage.googleapis.com/assets.milanr.org/fonts/suisse/SuisseIntl-Book-WebS.woff2") format("woff2"), url("https://storage.googleapis.com/assets.milanr.org/fonts/suisse/SuisseIntl-Book-WebS.woff") format("woff"), url("https://storage.googleapis.com/assets.milanr.org/fonts/suisse/SuisseIntl-Book-WebS.eot") format("opentype"), url("https://storage.googleapis.com/assets.milanr.org/fonts/suisse/SuisseIntl-Book-WebS.ttf") format("truetype");
+  src: url("https://static.milanr.io/fonts/suisse/SuisseIntl-Book-WebS.woff2") format("woff2"), url("https://static.milanr.io/fonts/suisse/SuisseIntl-Book-WebS.woff") format("woff"), url("https://static.milanr.io/fonts/suisse/SuisseIntl-Book-WebS.eot") format("opentype"), url("https://static.milanr.io/fonts/suisse/SuisseIntl-Book-WebS.ttf") format("truetype");
   font-weight: 350;
   font-style: normal;
   font-display: block;
 }
 @font-face {
   font-family: "SuisseIntl";
-  src: url("https://storage.googleapis.com/assets.milanr.org/fonts/suisse/SuisseIntl-Light-WebS.woff2") format("woff2"), url("https://storage.googleapis.com/assets.milanr.org/fonts/suisse/SuisseIntl-Light-WebS.woff") format("woff"), url("https://storage.googleapis.com/assets.milanr.org/fonts/suisse/SuisseIntl-Light-WebS.eot") format("opentype"), url("https://storage.googleapis.com/assets.milanr.org/fonts/suisse/SuisseIntl-Light-WebS.ttf") format("truetype");
+  src: url("https://static.milanr.io/fonts/suisse/SuisseIntl-Light-WebS.woff2") format("woff2"), url("https://static.milanr.io/fonts/suisse/SuisseIntl-Light-WebS.woff") format("woff"), url("https://static.milanr.io/fonts/suisse/SuisseIntl-Light-WebS.eot") format("opentype"), url("https://static.milanr.io/fonts/suisse/SuisseIntl-Light-WebS.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: block;
 }
 @font-face {
   font-family: "SuisseIntl mono";
-  src: url("https://storage.googleapis.com/assets.milanr.org/fonts/suisse/SuisseIntlMono-Regular-WebS.woff2") format("woff2"), url("https://storage.googleapis.com/assets.milanr.org/fonts/suisse/SuisseIntlMono-Regular-WebS.woff") format("woff"), url("https://storage.googleapis.com/assets.milanr.org/fonts/suisse/SuisseIntlMono-Regular-WebS.eot") format("opentype"), url("https://storage.googleapis.com/assets.milanr.org/fonts/suisse/SuisseIntlMono-Regular-WebS.ttf") format("truetype");
+  src: url("https://static.milanr.io/fonts/suisse/SuisseIntlMono-Regular-WebS.woff2") format("woff2"), url("https://static.milanr.io/fonts/suisse/SuisseIntlMono-Regular-WebS.woff") format("woff"), url("https://static.milanr.io/fonts/suisse/SuisseIntlMono-Regular-WebS.eot") format("opentype"), url("https://static.milanr.io/fonts/suisse/SuisseIntlMono-Regular-WebS.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: block;
