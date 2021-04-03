@@ -45,3 +45,15 @@
 	font-style: normal;
 	font-display: block;
 }
+
+@font-face {
+	font-family: "SuisseSIgn";
+	src:
+		url("https://storage.googleapis.com/assets.milanr.org/fonts/suisse/SuisseSIgn-Regular-WebS.woff2") format("woff2"),
+		url("https://storage.googleapis.com/assets.milanr.org/fonts/suisse/SuisseSIgn-Regular-WebS.woff") format("woff"),
+		url("https://storage.googleapis.com/assets.milanr.org/fonts/suisse/SuisseSIgn-Regular-WebS.eot") format("opentype"),
+		url("https://storage.googleapis.com/assets.milanr.org/fonts/suisse/SuisseSIgn-Regular-WebS.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: block;
+}

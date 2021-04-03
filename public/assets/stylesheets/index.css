@@ -50,6 +50,7 @@ div#main h1 {
   font-size: 5.5em;
   font-weight: 350;
   line-height: 100%;
+  font-family: "SuisseIntl", "SuisseIntl", Muli, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin-left: -4px;
   /* FIX for the "Suisse Int'l" font used */
 }

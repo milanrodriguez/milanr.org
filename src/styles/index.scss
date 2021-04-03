@@ -15,6 +15,7 @@ sans-serif,
 "Apple Color Emoji",
 "Segoe UI Emoji",
 "Segoe UI Symbol";
+$font-family-headline:"SuisseIntl", $font-family;
 $global-left-margin: 3rem;
 $transition-time: 0.3s;
 
@@ -73,6 +74,7 @@ div#main {
 		font-size: 5.5em;
 		font-weight: 350;
 		line-height: 100%;
+		font-family: $font-family-headline;
 
 		margin-left: -4px; /* FIX for the "Suisse Int'l" font used */
 	}
